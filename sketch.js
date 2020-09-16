@@ -146,7 +146,7 @@ function redBalloon() {
 function blueBalloon() {
   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
   blue.addImage(blue_balloonImage);
-  blue.velocityX = 3;
+  blue.velocityX = 2;
   blue.lifetime = width;
   blue.scale = 0.2;
   blueB.add(blue);
@@ -157,7 +157,7 @@ function blueBalloon() {
 function greenBalloon() {
   var green = createSprite(0,Math.round(random(20, 370)), 10, 10);
   green.addImage(green_balloonImage);
-  green.velocityX = 3;
+  green.velocityX = 2;
   green.lifetime = width;
   green.scale = 0.2;
   greenB.add(green);
@@ -184,7 +184,7 @@ function pinkBalloon() {
   arrow.addImage(arrowImage);
  // arrow.x = 360;
   arrow.y=bow.y;
-  arrow.velocityX = -6;  
+  arrow.velocityX = -8;  
   arrow.lifetime = 300;
   arrow.scale = 0.5;
    arrow.setCollider("rectangle", 10, 0, 260, 50);
