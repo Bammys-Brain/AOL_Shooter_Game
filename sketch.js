@@ -128,14 +128,14 @@ if (arrowGroup.isTouching(pinkB)) {
   drawSprites();
     textSize(40);
     textFont("Georgia");
-    text("Score: "+ score, width-550,height-560);
+    text("Happiness: "+ score, width-550,height-560);
 }
 
 
 function redBalloon() {
  var red = createSprite(0,Math.round(random(20, 370)), 10, 10);
   red.addImage(red_balloonImage);
-  red.velocityX = 2;
+  red.velocityX = 3;
   red.lifetime = width;
   red.scale = 0.2;
   redB.add(red);
@@ -146,7 +146,7 @@ function redBalloon() {
 function blueBalloon() {
   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
   blue.addImage(blue_balloonImage);
-  blue.velocityX = 2;
+  blue.velocityX = 3;
   blue.lifetime = width;
   blue.scale = 0.2;
   blueB.add(blue);
@@ -157,7 +157,7 @@ function blueBalloon() {
 function greenBalloon() {
   var green = createSprite(0,Math.round(random(20, 370)), 10, 10);
   green.addImage(green_balloonImage);
-  green.velocityX = 2;
+  green.velocityX = 4;
   green.lifetime = width;
   green.scale = 0.2;
   greenB.add(green);
@@ -168,7 +168,7 @@ function greenBalloon() {
 function pinkBalloon() {
   var pink = createSprite(0,Math.round(random(20, 370)), 10, 10);
   pink.addImage(pink_balloonImage);
-  pink.velocityX = 2;
+  pink.velocityX = 3;
   pink.lifetime = width;
   pink.scale = 0.2;
   pinkB.add(pink);
